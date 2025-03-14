@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="prog2.css">
+</head>
+<body>
+    <form>
+        <label for="item">Task</label>
+        <input type="text" name="item" id="item">
+        <input type="button" value="Add" id="add">
+    </form>
+    <ul id="task"></ul>
+    <script>
+        document.getElementById('add').addEventListener('click',function(){
+            let item=document.getElementById('item').value;
+            //document.getElementById('task').innerHTML="<li>"+item+"</li>";
+            let ul = document.getElementById('task');
+            let li = document.createElement('li');
+            let txt = document.createTextNode(item);
+            li.setAttribute('class','item');
+
+            //Agrega boton de eliminar
+            let deleteButton = document.createElement('a'); //Se agrega un hipervinculo (link) que usaremos para poder realizar la acción de eliminar
+            
+            //Agregamos la class del a todos los links para eliminar, esto para posteriormente darle presentación
+            deleteButton.setAttribute('class','del');
+            //Se agrgea un atributo de referencia y el nodo de texto para que se pinte la X
+            deleteButton.setAttribute('href','#');
+            let textDelete =document.createTextNode("X");
+
+            //Agregamos el evento de eliminación
+            deleteButton.addEventListener('click',function(e){
+                //Obtener el elemento actual de la lista
+                li.parentNode.removeChild(li);
+            });
+
+
+            //Agregamos la X al link
+            deleteButton.appendChild(textDelete);
+
+            //Agregar al <ul> cada item
+            li.appendChild(txt);
+            //Agregamos e link de eliminar 
+            li.appendChild(deleteButton);
+            ul.appendChild(li);
+        });
+    </script>
+</body>
+</html>
