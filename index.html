@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" href="https://img.icons8.com/?size=50&id=3sgPu_H7LVTD&format=png&color=000000">
+</head>
+
+<body>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="arrow-right-circle" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </symbol>
+        <symbol id="logo" viewBox="0 0 60 60">
+          <title>logo</title>
+          <path d="M503.521,117.922c-11.959-14.792-26.904-26.292-44.836-34.504c-17.932-8.207-37.136-12.301-57.601-12.301H25.451 c-6.763,0-9.915,4.963-7.05,11.089l36.132,77.222c2.864,6.12,4.04,16.444,2.625,23.054L0.268,448.232 c-1.414,6.609,2.919,11.971,9.675,11.971h77.045c6.763,0,13.384-5.361,14.804-11.971l56.885-265.756 c1.414-6.609,8.042-11.971,14.805-11.971h62.455c6.762,0,11.095,5.361,9.676,11.971l-56.886,265.756 c-1.414,6.609,2.919,11.971,9.676,11.971h77.045c6.763,0,13.384-5.361,14.804-11.971l56.886-265.756 c1.414-6.609,8.042-11.971,14.805-11.971h39.131c11.347,0,19.755,3.335,25.232,10.031c5.674,6.481,7.191,15.398,4.56,26.738 l-51.549,240.944c-1.413,6.609,2.92,11.971,9.682,11.971h77.045c6.763,0,13.391-5.354,14.811-11.965l47.277-219.97 c4.253-20.067,4.253-39.768,0-59.119C523.889,149.795,515.682,132.721,503.521,117.922z"></path>
+        </symbol>
+      </svg>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+
+   
+
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#logo"/></svg>
+                <span class="fs-4">Fundamentos de programación</span>
+            </a>
+        </header>
+
+        <main>
+            <h1 class="text-body-emphasis">Ejercicios de la clase con el grupo MI41</h1>
+            <p class="fs-5 col-md-8">A continuación se listan algunos ejercicios de los que se realizan en clases con el fin de que los alumnos de mantenimiento puedan estar al corriente con sus actividades.</p>
+
+            
+
+            <hr class="col-3 col-md-2 mb-5">
+
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h2 class="text-body-emphasis">Ejercicios</h2>
+                    
+                        <div class="accordion" id="modernAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Ejercicio #2
+                                        </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#modernAccordion">
+                                    <div class="accordion-body">
+                                        <a href="prog2.html" class="btn btn-secundary" target="_blank">Preview</a>
+                                        <a href="https://github.com/ProfVillegas/programacion/blob/main/prog2.html" target="_blank" class="btn btn-secundary">Code</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+
+                <div class="col-md-6" style="display: none;">
+                    <h2 class="text-body-emphasis">Material de consulta</h2>
+                    <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+                    <ul class="list-unstyled ps-0">
+                        <li>
+                            <a class="icon-link mb-1" href="/docs/5.3/getting-started/introduction/">
+                                <svg class="bi" width="16" height="16">
+                                    <use xlink:href="#arrow-right-circle" />
+                                </svg>
+                                Bootstrap quick start guide
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-link mb-1" href="/docs/5.3/getting-started/webpack/">
+                                <svg class="bi" width="16" height="16">
+                                    <use xlink:href="#arrow-right-circle" />
+                                </svg>
+                                Bootstrap Webpack guide
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-link mb-1" href="/docs/5.3/getting-started/parcel/">
+                                <svg class="bi" width="16" height="16">
+                                    <use xlink:href="#arrow-right-circle" />
+                                </svg>
+                                Bootstrap Parcel guide
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-link mb-1" href="/docs/5.3/getting-started/vite/">
+                                <svg class="bi" width="16" height="16">
+                                    <use xlink:href="#arrow-right-circle" />
+                                </svg>
+                                Bootstrap Vite guide
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-link mb-1" href="/docs/5.3/getting-started/contribute/">
+                                <svg class="bi" width="16" height="16">
+                                    <use xlink:href="#arrow-right-circle" />
+                                </svg>
+                                Contributing to Bootstrap
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="pt-5 my-5 text-body-secondary border-top">
+            Created by the Bootstrap team &middot; &copy; 2024
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
