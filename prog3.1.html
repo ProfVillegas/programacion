@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog 3</title>
+</head>
+<body>
+    <form action="#">
+        <label for="num">Proporcione un número</label>
+        <input type="number" name="num" id="num">
+        <input type="button" value="Comparar" id="cmp">
+        <div class="result" id="result1"></div>
+    </form>
+    <script>
+        document.getElementById('cmp').addEventListener('click',function(){
+            let num= document.getElementById('num').value;
+            let text=" ";
+            if(num>=10){
+                text="El número "+num+" es mayor o igual a 10";
+            } else {
+                text="El número "+num+" es menor a 10";
+            }
+            document.getElementById("result1").innerHTML=text;
+        });
+    </script>
+
+<form action="#">
+    <p>Validar que la longitud de la matricula sea igual a 7</p>
+    <label for="mat">Matricula</label>
+    <input type="text" name="mat" id="mat">
+    <input type="button" value="Validar" id="vld">
+    <div class="result" id="result2"></div>
+</form>
+<script>
+    document.getElementById('vld').addEventListener("click",function(){
+        let largo= document.getElementById("mat").value;
+        let texto2="";
+        //alert(largo.length)
+        if(largo.length==7){
+            texto2=largo+" es una matrícula válida.";
+        } else{
+            texto2=largo+" es un valor incorrecto.";
+        }
+        document.getElementById("result2").innerHTML=texto2;
+    });
+</script>
+    
+</body>
+</html>
