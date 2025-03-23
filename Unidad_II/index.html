@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios Evaluación</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 
 <body>
     <div class="container">
@@ -26,22 +28,22 @@
                 <b>Ayuda:</b> <a href="reactivos/reactivo01.html" download="reactivo01.html">Plantilla del
                     ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>
-                var numero = parseInt(prompt("Teclea un  número"));
-                    if (numero>=0){
+        <pre>
+        var numero = parseInt(prompt("Teclea un  número"));
+            if (numero>=0){
 
 
-                        alert(numero +" es positivo");
+                alert(numero +" es positivo");
 
 
-                    }else{
+            }else{
 
 
-                        alert(numero +" es negativo");
+                alert(numero +" es negativo");
 
 
-                    }
-                </pre>
+            }
+        </pre>
             </li>
             <li>
                 Crear un programa donde debes pedir dos números enteros y devolver el cociente de dividir el primero entre el
@@ -49,104 +51,104 @@
                 Ejemplo: <em>Si se entran el número 8 y 2, debe resultar 4. Si se entran 4 y 0, debe resultar en un mensaje de <b>error</b>.</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo02.html" download="reactivo02.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>
-                    var dividendo = parseInt(prompt("Primer numero"));
-                    var divisor  = parseInt(prompt("Primer numero"));    
-                    var cociente;          
-                    if (divisor != 0){
-                        cociente = dividendo/divisor;
-                        alert( dividendo + "/" + divisor + " = " + cociente);
-                    }
-                    else{
-                       alert("No puedes dividir entre 0");
-                    }
-                </pre>
+        <pre>
+            var dividendo = parseInt(prompt("Primer numero"));
+            var divisor  = parseInt(prompt("Primer numero"));    
+            var cociente;          
+            if (divisor != 0){
+                cociente = dividendo/divisor;
+                alert( dividendo + "/" + divisor + " = " + cociente);
+            }
+            else{
+                alert("No puedes dividir entre 0");
+            }
+        </pre>
             </li>
             <li>
                 Crear un programa donde el usuario tecleará dos números. Debe devolver la diferencia entre el mayor y el menor.<br>
                 Ejemplo: <em>Si el usuario entre el 5 y el 8, el programa devolverá 3 (8 - 5). La diferencia siempre debe ser expresado en un número positivo.</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo03.html" download="reactivo03.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>    
-                var num1 = parseInt(prompt("Teclear un número"));
-                var num2 = parseInt(prompt("Teclear un número"));
-                var resta;
-                if(num1 > num2){
-                    resta = num1 - num2;
-                    alert("Diferencia "+ resta);
-                }else{
-                resta = num2 - num1;
-                    alert("Diferencia "+ resta);
-                }
-                </pre>
+        <pre>    
+        var num1 = parseInt(prompt("Teclear un número"));
+        var num2 = parseInt(prompt("Teclear un número"));
+        var resta;
+        if(num1 > num2){
+            resta = num1 - num2;
+            alert("Diferencia "+ resta);
+        }else{
+        resta = num2 - num1;
+            alert("Diferencia "+ resta);
+        }
+        </pre>
             </li>
             <li>
                 Crear un programa que dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.<br>
                 Ejemplo: <em>Un cliente elige vino, aparecerá el mensaje vaya a la barra, en caso contrarío dirá que vaya a la tienda.</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo04.html" download="reactivo04.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>    
-                var articulo = prompt("Puede elegir: vino, cerveza, otros")
-                if ( articulo === "vino" || articulo === "cerveza"){
-                    alert("vaya a la barra");
-                }else{
-                    alert("vaya a la tienda");
-                }
-                </pre>
+        <pre>    
+        var articulo = prompt("Puede elegir: vino, cerveza, otros")
+        if ( articulo === "vino" || articulo === "cerveza"){
+            alert("vaya a la barra");
+        }else{
+            alert("vaya a la tienda");
+        }
+        </pre>
             </li>
             <li>
                 Crear un programa que pida al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobús le recordará que lleve dinero para el billete.<br>
                 Ejemplo: <em>El cliente pide ir en tren, aparecerá el mensaje "lleva dinero para el ticket".</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo05.html" download="reactivo05.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>                
-                    var medio = prompt("tren, autobús, coche, bicicleta");
-                    if (medio === "tren" || medio === "autobús"){
-                        alert("Lleva dinero para el ticket");
-                    }
-                </pre>
+    <pre>                
+        var medio = prompt("tren, autobús, coche, bicicleta");
+        if (medio === "tren" || medio === "autobús"){
+            alert("Lleva dinero para el ticket");
+        }
+    </pre>
             </li>
             <li>
                 Crear un programa que dirigirá a los clientes a la barra de bebidas o a la de comidas, para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide un cerveza o vino se le dirige a la barra y si no pues se le dirige a la tienda.<br>
                 Ejemplo: <em>Un cliente elige vino, aparecerá el mensaje vaya a la barra, en caso contrarío dirá que vaya a la tienda.</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo04.html" download="reactivo04.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>    
-                var articulo = prompt("Puede elegir: vino, cerveza, otros")
-                if ( articulo === "vino" || articulo === "cerveza"){
-                    alert("vaya a la barra");
-                }else{
-                    alert("vaya a la tienda");
-                }
-                </pre>
+        <pre>    
+        var articulo = prompt("Puede elegir: vino, cerveza, otros")
+        if ( articulo === "vino" || articulo === "cerveza"){
+            alert("vaya a la barra");
+        }else{
+            alert("vaya a la tienda");
+        }
+        </pre>
             </li>
             <li>
                 Crear un programa que pida al usuario si va a viajar con coche, tren, bicicleta o autobús. Si va en tren o autobús le recordará que lleve dinero para el billete.<br>
                 Ejemplo: <em>El cliente pide ir en tren, aparecerá el mensaje "lleva dinero para el ticket".</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo05.html" download="reactivo05.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>                
-                    var medio = prompt("tren, autobús, coche, bicicleta");
-                    if (medio === "tren" || medio === "autobús"){
-                        alert("Lleva dinero para el ticket");
-                    }
-                </pre>
+        <pre>                
+            var medio = prompt("tren, autobús, coche, bicicleta");
+            if (medio === "tren" || medio === "autobús"){
+                alert("Lleva dinero para el ticket");
+            }
+        </pre>
             </li>
             <li>
                 Crear un programa que permita identificar si en un tramo de un rally los conductores no deben ir ni demasiado rápido ni demasiado lentos. Este ejercicio debe tomar la longitud del tramo en kilómetros y el tiempo empleado, si la velocidad está entre 40 y 60 km/h el conductor pasa la prueba en caso contrario es descalificado.<br>
                 Ejemplo: <em>Ejemplo si recorre 100 km en 4 horas, ha ido a una velocidad de 100/4 que son 25km/h. Estaría descalificado.</em><br>
                 <b>Ayuda:</b> <a href="reactivos/reactivo06.html" download="reactivo06.html">Plantilla del ejercicio.</a>
                 <br><b>Código de Ejemplo:</b>
-                <pre>
-                    var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));
-                    var tramo = parseInt(prompt("ingresa la distancia"));
-                    var velocidad = tramo/tiempo;
-                    if (velocidad >= 40 && velocidad <= 60){    
-                          alert("Has pasado la prueba");
-                    }else{
-                          alert("Has sido descalificado");
-                         }
-                </pre>
+    <pre>
+    var tiempo = parseInt(prompt("ingresa el tiempo en horas enteras"));
+    var tramo = parseInt(prompt("ingresa la distancia"));
+    var velocidad = tramo/tiempo;
+    if (velocidad >= 40 && velocidad <= 60){    
+            alert("Has pasado la prueba");
+    }else{
+            alert("Has sido descalificado");
+    }
+    </pre>
             </li>
         </ul>
 
