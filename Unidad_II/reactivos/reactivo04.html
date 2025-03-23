@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="matricula" content="12345678">
+    <meta name="nombre-completo" content="Juan Pérez">
+    <meta name="grupo" content="2A">
+    <title>reactivo 004</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label>Qué desea ordenar</label>
+            <select name="articulo" id="articulo">
+                <option disabled selected>Seleccione un artículo</option>
+                <option value="vino">Vino</option>
+                <option value="cerveza">Cerveza</option>
+                <option value="refresco">Refresco</option>
+                <option value="agua">Agua</option>
+            </select>
+            <button id="verificar">Verificar</button>
+
+        </form>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        document.getElementById('verificar').addEventListener('click',function(e){
+            event.preventDefault();
+            //Realizar la operación y mostrar en id=resultado la respuesta.
+            //El siguiente código es de ayuda
+            let selection = document.getElementById('articulo').value;
+            document.getElementById('resultado').textContent = `Has seleccionado: ${selection}`;
+            
+        });
+    </script>
+</body>
+
+</html>
