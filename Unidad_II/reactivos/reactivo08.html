@@ -13,8 +13,8 @@
 <body>
     <div>
         <form>
-            <input type="number" id="tiempo" placeholder="Ingrese el primer número">
-            <input type="number" id="velocidad" placeholder="Ingrese el segundo número">
+            <input type="number" id="tiempo" placeholder="Ingrese el tiempo">
+            <input type="number" id="tramo" placeholder="Ingrese el tramo">
             <button id="verificar">Verificar</button>
 
         </form>
@@ -24,6 +24,16 @@
         document.getElementById('verificar').addEventListener('click',function(e){
             event.preventDefault();
             //Realizar la operación y mostrar en id=resultado la respuesta.
+            let tiempo=document.getElementById("tiempo").value;
+            let tramo = document.getElementById('tramo').value;
+            let velocidad= tramo/tiempo;
+            let texto="";
+            if(velocidad>=40 && velocidad<=60){
+                texto="Has aprobado.";
+            } else {
+                texto="Has sido descalificado";
+            }
+            document.getElementById("resultado").innerHTML=texto;
             
         });
     </script>
