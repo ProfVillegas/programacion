@@ -32,8 +32,15 @@
             //Realizar la operación y mostrar en id=resultado la respuesta.
             //El siguiente código es de ayuda
             let selection = document.getElementById('articulo').value;
-            document.getElementById('resultado').textContent = `Has seleccionado: ${selection}`;
+            let texto="";
+            if(selection=="vino" || selection=="cerveza"){
+                texto="Vaya a la barra."
+            } else{
+                texto="Vaya a la tienda."
+            }
+            document.getElementById('resultado').textContent = `Has seleccionado: ${texto}`;
             
+
         });
     </script>
 </body>
