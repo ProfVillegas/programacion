@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 01</title>
+</head>
+<body>
+    <form action="#">
+        <label for="ncuartos">Número de cuartos</label>
+        <input type="number" name="ncuartos" id="ncuartos" value="6" max="150" min="6">
+        <input type="button" value="Crear" id="enviar">
+    </form>
+    <div id="complejo">
+  
+    </div>
+    <script>
+        let cuartos = [];
+        let ncuartos=0;
+        document.getElementById("enviar").addEventListener("click",function(){
+            for(let x =0; x < document.getElementById("ncuartos").value; x++){
+                let hab = document.createElement("select");
+                hab.id="habitacion_"+(x+1);
+                let opt1=document.createElement("option");
+                opt1.value="single";
+                opt1.text="Sencilla";
+
+                let opt2=document.createElement("option");
+                opt2.value="double";
+                opt2.text="Doble";
+
+                hab.appendChild(opt1);
+                hab.appendChild(opt2);
+                let etiqueta=document.createElement("label");
+                etiqueta.innerHTML="Tipo de habitación "+(x+1)+" : ";
+                let contenedor=document.createElement("div");
+
+                contenedor.appendChild(etiqueta);
+                contenedor.appendChild(hab);
+                document.getElementById("complejo").appendChild(contenedor);
+            }
+            
+        });
+    </script>
+</body>
+</html>
